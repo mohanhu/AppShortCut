@@ -1,5 +1,6 @@
 package com.example.appshortcuts
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         val args = intent?.getStringExtra(HOME_SHORT_CUT)
 
         println("ActivityMainBinding >>> $args")
+
+        if(args == HOME_SHORT_CUT){
+            Intent(this,ShortCutActivity::class.java).apply {
+                startActivity(this)
+            }
+        }
 
     }
 }

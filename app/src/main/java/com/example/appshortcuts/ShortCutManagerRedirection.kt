@@ -16,7 +16,7 @@ class ShortCutManagerRedirection(
     private val shortcutManager = context.getSystemService(ShortcutManager::class.java)
 
     fun startDynamicShortcut() {
-        val shortcut = ShortcutInfo.Builder(context, "dynamic_shortcut_id")
+        val shortcut = ShortcutInfo.Builder(context, HOME_SHORT_CUT)
             .setShortLabel("Open Feature")
             .setLongLabel("Open Specific Feature")
             .setIcon(Icon.createWithResource(context, R.drawable.ic_launcher_foreground))
