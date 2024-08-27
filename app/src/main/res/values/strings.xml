@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">AppShortCuts</string>
-    <string name="compose_shortcut_short_label1">MainActivity</string>
-    <string name="compose_disabled_message1">Disabled1</string>
+    <string name="compose_shortcut_short_label1">Static</string>
+    <string name="compose_disabled_message1">Disabled!</string>
 </resources>
